@@ -38,7 +38,16 @@
 
     void loop()
     {
-
+        tft.fillScreen(TFT_WHITE);
+        tft.setSwapBytes(true);
+        tft.pushImage(0, 0, img1_width, img1_height, img1);  //display
+        delay(2000);
+        tft.pushImage(0, 0, img1_width, img1_height, img2);  //display
+        delay(2000);
+        tft.pushImage(0, 0, img1_width, img1_height, img3);  //display
+        delay(2000);
+        tft.pushImage(0, 0, img1_width, img1_height, lingmeng);  //display
+        delay(2000);
     }
 
             
